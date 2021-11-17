@@ -1,5 +1,20 @@
 import { startOfMonth, getDay, getDaysInMonth, lastDayOfMonth } from "date-fns";
 
+export const month = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+];
+
 /* 
   getPrevMonthDates(date) takes a Date object as an argument; it returns an array that contains the remaining dates of the previous month that could appear on a calendar page for the month of the Date object
 
