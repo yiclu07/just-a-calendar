@@ -1,8 +1,10 @@
 import styles from './DateTile.module.css';
 
-const DateTile = () => {
+const DateTile = ({ dateNumber, isToday, isPrevMonth, isNextMonth }) => {
   return (
-    <div></div>
+    <div className={`${styles.DateTile} ${isToday ? styles.today : isPrevMonth ? styles.prevMonthTile : isNextMonth ? styles.nextMonthTile : ''}`}>
+      {dateNumber.toString()}
+    </div>
   )
 }
 
