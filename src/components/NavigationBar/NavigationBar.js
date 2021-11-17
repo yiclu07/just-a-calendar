@@ -2,15 +2,16 @@ import styles from './NavigationBar.module.css';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { getMonth, setMonth } from 'date-fns';
 
 library.add(faChevronLeft, faChevronRight);
 
-function NavigationBar() {
+function NavigationBar({ date, onDateChange }) {
   return (
     <div className={styles.NavigationBar}>
       <button
         className={styles.navButton}
-        onClick={/* go to previous month */}
+        onClick={() => {onDateChange(setMonth(date, getMonth(date) - 1))}}
       >
         <FontAwesomeIcon icon="chevron-left" />
       </button>
@@ -20,7 +21,7 @@ function NavigationBar() {
       </div>
       <button
         className={styles.navButton}
-        onClick={/* go to next month */}
+        onClick={() => {onDateChange(setMonth(date, getMonth(date) + 1))}}
       >
         <FontAwesomeIcon icon="chevron-right" />
       </button>
