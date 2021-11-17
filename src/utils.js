@@ -1,6 +1,6 @@
 import { startOfMonth, getDay, getDaysInMonth, lastDayOfMonth } from "date-fns";
 
-export const month = [
+export const months = [
   'January',
   'February',
   'March',
