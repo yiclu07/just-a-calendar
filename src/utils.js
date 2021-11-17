@@ -24,3 +24,25 @@ export const getPreviousMonthDates = (date) => {
 
   return previousMonthDatesArr;
 }
+
+/* 
+  getCurrentMonthDates(date) takes a Date object as an argument; it returns an array that contains the dates of the Date object's month
+
+  EXAMPLE:
+
+    const currentMonthDates = getCurrentMonthDates(new Date(2021, 0, 1));
+
+    currentMonthDates would equal: [
+      1, 2, 3, ... 29, 30, 31
+    ]
+*/
+export const getCurrentMonthDates = (date) => {
+  const currentMonthDatesArr = [];
+  const lastDateOfCurrentMonth = getDaysInMonth(date);
+
+  for (let i = 1; i <= lastDateOfCurrentMonth; i++) {
+    currentMonthDatesArr.push(i);
+  }
+
+  return currentMonthDatesArr;
+}
