@@ -1,0 +1,25 @@
+.DateTile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 7);
+  height: 200px;
+}
+
+.DateTile:hover:not(.today) {
+  background-color: cyan;
+  border: 2px solid black;
+}
+
+.today {
+  background-color: gray;
+}
+
+.today:hover {
+  border: 2px solid black;
+}
+
+.prevMonthTile,
+.nextMonthTile {
+  opacity: 0.5;
+}

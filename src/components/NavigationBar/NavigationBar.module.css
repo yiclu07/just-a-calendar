@@ -1,0 +1,22 @@
+.NavigationBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dateHeading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navButton {
+  background-color: transparent;
+  border: none;
+  padding: 2em 3em;
+}
+
+.navButton:hover {
+  cursor: pointer;
+}

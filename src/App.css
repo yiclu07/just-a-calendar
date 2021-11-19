@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.calendar {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 70%;
+  height: 100%;
+  padding-top: 20px;
+}

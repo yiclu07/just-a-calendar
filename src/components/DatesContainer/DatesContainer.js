@@ -9,7 +9,7 @@ const DatesContainer = ({ date }) => {
   const nextMonthDates = getNextMonthDates(date);
 
   return (
-    <div>
+    <div className={styles.DatesContainer}>
       {prevMonthDates.map((calendarDate, index) => {
         return (
           <DateTile
